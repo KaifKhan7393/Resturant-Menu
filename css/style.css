@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #d3fdbb;
+}
+.container {
+  width: 100%;
+  height:100%;
+  padding-top: 5%;
+  color: #000000;
+}
+/* Top Heading */
+h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+/* Bottom Line */
+.line {
+  width: 4.5rem;
+  height: 3px;
+  margin: 0 auto;
+  background: #6ECB63;
+}
+.buttons {
+  width: 100%;
+  text-align: center;
+}
+.btn {
+  background: transparent;
+  border: 2px solid  #6ECB63;
+  border-radius: 5px;
+  padding: 2px 4px;
+  color:  #000000;
+  margin: 0 10px;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: #6ECB63;
+  color: #ffffff;
+  transition:all 0.5s ease-in-out;
+}
+.cards {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.boxes {
+  display: flex;
+  width: 40%;
+  margin: 1rem 2rem;
+}
+.image-box {
+  border: 2px solid  #6ECB63;
+  border-radius: 4px;
+  width: 30%;
+  height: 104px;
+}
+.image-box img {
+  width: 100%;
+  height: 100px;
+}
+.text-content {
+  width: 70%;
+  margin: 0 1rem;
+}
+.top-heading {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid  #6ECB63;
+}
+.text-content h3 {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+.text-content .price {
+  color:  #6ECB63;
+}
+
+.text-content p {
+  margin-top: 0.5rem;
+}
+
+/* Making Responsive to cards for mobile devices*/
+@media only screen and (max-width: 768px) {
+  .boxes {
+    display: flex;
+    width: 40%;
+    margin: 1rem 2rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .boxes {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .image-box {
+    width: 100%;
+    height: 150px;
+  }
+  .image-box img {
+    width: 100%;
+    height: 100%;
+  }
+  .text-content {
+    width: 100%;
+    margin: 1rem 1rem;
+  }
+}
